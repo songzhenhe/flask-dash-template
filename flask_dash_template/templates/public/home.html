@@ -1,0 +1,35 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+    
+      <h1 class="display-3">Welcome to flask-dash-template</h1>
+    
+      <p>Make Plotly Dash part of your Flask Application. The template also includes Bootstrap 4, jQuery 3, Flask-SQLAlchemy, WTForms, and various testing utilities out of the box, created using cookiecutter-flask.</p>
+      <p><a href="https://github.com/songzhenhe/flask-dash-template" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
+</div><!-- /.jumbotron -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <h2><i class="fa fa-code"></i> Dash App 1</h2>
+      <p>Dash App 1.</p>
+      <p><a class="btn btn-outline-secondary" href="{{ url_for('dashboard.dashapp1') }}">Link &raquo;</a></p>
+    </div>
+    <div class="col-lg-4">
+      <h2><i class="fa fa-flask"></i> Dash App 2</h2>
+      <p>Dash App 2.</p>
+      <p><a href="{{ url_for('dashboard.dashapp2') }}" class="btn btn-outline-secondary">Link &raquo;</a></p>
+   </div>
+    <div class="col-lg-4">
+      <h2><i class="fa fa-edit"></i> Dash App 3</h2>
+      <p>Add another dash app here.</p>
+      <p><a href="{{ url_for('dashboard.dashapp3') }}" class="btn btn-outline-secondary">Link &raquo;</a></p>
+    </div>
+  </div><!-- /.row -->
+</div>
+{% endblock %}
+
